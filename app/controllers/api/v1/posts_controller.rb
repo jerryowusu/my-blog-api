@@ -39,7 +39,7 @@ class Api::V1::PostsController < ApplicationController
       private
     
       def post_params
-        params.require(:post).permit(:author_id, :title, :text).tap do |post_params|
+        params.require(:post).permit(:title, :text, :author_id ).tap do |post_params|
           post_params.require(:text)
         end
       end

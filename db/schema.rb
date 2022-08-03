@@ -48,7 +48,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_03_110951) do
     t.string "name"
     t.string "email"
     t.text "password"
-    t.integer "posts_counters", default: 0
+    t.integer "posts_counter", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
